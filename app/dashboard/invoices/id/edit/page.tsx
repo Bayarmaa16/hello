@@ -1,23 +1,22 @@
-import Form from '@/app/ui/invoices/create-form';
+import Form from '@/app/ui/invoices/edit-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
+import { invoices } from '@/app/lib/placeholder-data';
  
 export default async function Page() {
-  const customers = await fetchCustomers();
- 
   return (
     <main>
       <Breadcrumbs
         breadcrumbs={[
           { label: 'Асуудлын бүртгэл', href: '/dashboard/invoices' },
           {
-            label: 'Шинээр бүргэх',
-            href: '/dashboard/invoices/create',
+            label: 'Өөрчлөлт хийх',
+            href: `/dashboard/invoices/id/edit`,
             active: true,
           },
         ]}
       />
-      <Form customers={customers} />
+      {/* <Form invoice={invoices} customers={customers} /> */}
     </main>
   );
 }
