@@ -11,13 +11,13 @@ import clsx from 'clsx';
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Dashboard', href: '/dashboard', icon: HomeIcon },
+  { name: 'Оролцогч талын шинжилгээ', href: '/dashboard', icon: HomeIcon },
   {
     name: 'Асуудлын бүртгэл',
     href: '/dashboard/invoices',
     icon: DocumentDuplicateIcon,
   },
-  { name: 'Оролцогч талын шинжилгээ', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'Учир шалтгааны шинжилгээ', href: '/dashboard/customers', icon: UserGroupIcon },
 ];
 
 export default function NavLinks() {
